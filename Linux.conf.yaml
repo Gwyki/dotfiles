@@ -8,9 +8,9 @@
         ~/.tmux.conf: tmux.conf
         ~/.tmux: tmux
         ~/.config/nvim: config/nvim
+        ~/.zshrc: zshrc
 - shell:
         - ["git submodule update --init --recursive", Installing submodules...]
         - ["sudo apt-get -y install tmux git zsh", Installing applications...]
-        - ["tmux start-server; tmux new-session -d", Setting up Tmux...]
-        - ["~/.dotfiles/tmux/plugins/tpm/scripts/install_plugins.sh; tmux kill-server", Setting up Tmux Plugins...]
+        - ["tmux start-server; tmux new-session -d; ~/.dotfiles/tmux/plugins/tpm/scripts/install_plugins.sh; tmux kill-server", Setting up Tmux...]
 
