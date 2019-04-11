@@ -1,3 +1,6 @@
-tmux/plugins/tmux-sensible
-tmux/plugins/tmux-yank
-config/nvim/plugged/vim-move
+tmux/plugins/*
+!tmux/plugins/tpm
+
+config/nvim/plugged/*
+
+
