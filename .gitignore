@@ -1,6 +1,6 @@
 tmux/plugins/*
 !tmux/plugins/tpm
 
-config/nvim/plugged/*
+nvim/plugged/*
 
 

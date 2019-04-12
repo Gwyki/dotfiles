@@ -5,12 +5,20 @@
 - clean: ['~']
 
 - link:
-        ~/.tmux.conf: tmux.conf
+        ~/.fonts/: 
+                path: fonts/*
+                glob: true
+
+        ~/.config/terminator: terminator
+        ~/.config/tilda: tilda
+        ~/.config/base16-shell: base16-shell
+        ~/.tmux.conf: tmux/tmux.conf
         ~/.tmux: tmux
-        ~/.config/nvim: config/nvim
-        ~/.zshrc: zshrc
+        ~/.config/nvim: nvim
+        ~/.zshrc: zsh/zshrc
+        ~/.oh-my-zsh: zsh/oh-my-zsh
 - shell:
         - ["git submodule update --init --recursive", Installing submodules...]
-        - ["sudo apt-get -y install tmux git zsh", Installing applications...]
+        - ["sudo apt-get -y install terminator neovim tmux git zsh", Installing applications...]
         - ["tmux start-server; tmux new-session -d; ~/.dotfiles/tmux/plugins/tpm/scripts/install_plugins.sh; tmux kill-server", Setting up Tmux...]
 
