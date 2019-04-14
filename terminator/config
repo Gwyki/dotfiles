@@ -1,4 +1,5 @@
 [global_config]
+  borderless = True
   extra_styling = False
   inactive_color_offset = 1.0
   title_font = Hack Nerd Font 11
