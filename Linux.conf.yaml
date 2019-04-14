@@ -14,6 +14,7 @@
         ~/.config/base16-shell: base16-shell
         ~/.config/nvim: nvim
         
+        ~/.dircolors: dircolors/dircolors.testing
         ~/.tmux.conf: tmux/tmux.conf
         ~/.tmux: tmux
         ~/.zshrc: zsh/zshrc
@@ -23,6 +24,6 @@
         - ["sudo apt-get -y install wget terminator neovim tmux zsh htop", Installing applications...]
         - ["tmux start-server; tmux new-session -d; ~/.dotfiles/tmux/plugins/tpm/scripts/install_plugins.sh; tmux kill-server", Setting up Tmux...]
         - ["vim +PlugInstall +qall > /dev/null", Setting up Neovim...]
-        - ["ana_path=$(wget -O - https://www.anaconda.com/distribution/ 2>/dev/null | sed -ne 's@.*\(https:\/\/repo\.anaconda\.com\/archive\/Anaconda3-.*-Linux-x86_64\.sh\)\">64-Bit (x86) Installer.*@\1@p'); wget $ana_path -O anaconda_installer.sh; chmod +x anaconda_installer.sh; ./anaconda_installer.sh -b -p $HOME/anaconda; rm anaconda_installer.sh", Downloading and installing Anaconda...]
+          #        - ["ana_path=$(wget -O - https://www.anaconda.com/distribution/ 2>/dev/null | sed -ne 's@.*\(https:\/\/repo\.anaconda\.com\/archive\/Anaconda3-.*-Linux-x86_64\.sh\)\">64-Bit (x86) Installer.*@\1@p'); wget $ana_path -O anaconda_installer.sh; chmod +x anaconda_installer.sh; ./anaconda_installer.sh -b -p $HOME/anaconda; rm anaconda_installer.sh", Downloading and installing Anaconda...]
 
 

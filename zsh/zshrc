@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/miniconda3/bin:$HOME/.local/bin:$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/anaconda/bin:$HOME/.local/bin:$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/leigh/.oh-my-zsh"
@@ -99,6 +99,9 @@ export ZSH_TMUX_TERM=xterm-256color
 #
 # Example aliases
 
+eval $( dircolors -b $HOME/.dircolors )
+
+
 
 # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/"
@@ -119,3 +122,21 @@ alias tkss='tmux kill-session -t'
 
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
+
+# I haven't been using the conda init setup stuff - investigate pros and cons...
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+#__conda_setup="$('/home/leigh/anaconda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+#if [ $? -eq 0 ]; then
+#    eval "$__conda_setup"
+#else
+#    if [ -f "/home/leigh/anaconda/etc/profile.d/conda.sh" ]; then
+#        . "/home/leigh/anaconda/etc/profile.d/conda.sh"
+#    else
+#        export PATH="/home/leigh/anaconda/bin:$PATH"
+#    fi
+#fi
+#unset __conda_setup
+# <<< conda initialize <<<
+
